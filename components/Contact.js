@@ -42,14 +42,14 @@ const Contact = () => {
                 </span>
                 sitesbysiri@gmail.com
               </div>
-              {/* <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
+              <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
                 <i className="fa fa-phone-square absolute left-0 top-10 text-fs-39 text-accent" />
                 <span className="block opacity-80 uppercase font-normal">
                   call me
                 </span>
-                848 342 9868
-              </div> */}
-              <ul className="-ml-5 pt-4 mb-48">
+                +1 848 342 9868
+              </div>
+              {/* <ul className="-ml-5 pt-4 mb-48">
                 {socials.map((social) => (
                   <li key={social.id} className="inline-block">
                     <a
@@ -64,7 +64,7 @@ const Contact = () => {
                     </a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
             {/* Contact Details Ends */}
             {/* Contact Form Starts */}
