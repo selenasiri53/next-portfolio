@@ -1,0 +1,68 @@
+.switcher_container #switcher {
+  left: -500px;
+  transition: 0.3s all;
+}
+.switcher_container.switch_open #switcher {
+  left: 0px;
+}
+.switcher_container #showSwitcher {
+  left: 0px;
+  transition: 0.3s all;
+}
+.switcher_container.switch_open #showSwitcher {
+  left: -500px;
+}
+
+.revealer {
+  opacity: 0;
+  z-index: 99 !important;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.gridlist li div {
+  top: -100%;
+  transition: 0.5s all;
+}
+.gridlist li:hover div {
+  top: 0;
+  transition: 0.3s all;
+}
+.slideshow figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 222;
+}
+
+.d-none {
+  display: none;
+}
+
+.dark-switch {
+  /* width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.header ul.icon-menu li.desktop-nav-element.active i,
+.header ul.icon-menu li:hover i,
+.dark-switch:hover i {
+  color: white;
+}
+
+.flex {
+  display: flex !important;
+}
