@@ -83,14 +83,14 @@ const educations = [
     date: "2019",
     title: "HTML, CSS, JavaScript Course",
     unv: "Middlesex County College",
-    desc: "Introductory web development course in HTML, CSS and JavaScript",
+    desc: "Web development course in HTML, CSS and JavaScript",
   },
   {
     id: 3,
     date: "2019 - present",
     title: "Freelance",
     unv: "Udemy Online Courses",
-    desc: "Continued full stack experience from Udemy tutorials in Next.js, React, TypeScript, Python, Django and AWS",
+    desc: "Full stack development training from Udemy tutorials in Next.js, React, TypeScript, Python, Django and AWS",
   },
 ];
 
@@ -146,9 +146,10 @@ const About = () => {
                   </div>
                 ))}
               </div>
+
               <a
                 className="button group mt-30 overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
-                href="#"
+                href="assets/Selena_Siri_Full_Stack_Engineer.pdf"
               >
                 <span
                   className={`relative z-20 text-${
@@ -189,16 +190,17 @@ const About = () => {
             </div>
             {/* Facts Ends */}
           </div>
+
           <hr
             className={`border-t border-solid border-t-${
               dark ? "black-3" : "grey"
             } mx-auto max-w-40prcent mt-70 mb-55`}
           />
-          <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
+          {/* <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
             my skills
           </h3>
           {/* Skills Starts */}
-          <div className="flex w-full flex-wrap">
+          {/* <div className="flex w-full flex-wrap">
             {skills.map((skill) => (
               <div
                 className="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16"
@@ -222,13 +224,13 @@ const About = () => {
                 </h6>
               </div>
             ))}
-          </div>
-          {/* Skills Ends */}
-          <hr
+          </div> */}
+          {/* <hr
             className={`border-t border-solid border-t-${
               dark ? "black-3" : "grey"
             } mx-auto max-w-40prcent mt-35 mb-55`}
-          />
+          /> */}
+          <br />
           <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
             experience &amp; education
           </h3>
