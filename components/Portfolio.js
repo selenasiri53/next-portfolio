@@ -3,6 +3,7 @@ import { TunisContext } from "@/context/context";
 import SectionContainer from "@/layouts/SectionContainer";
 import { useContext } from "react";
 import SectionTitle from "./SectionTitle";
+import Image from "next/image";
 
 const items = [
   {
@@ -10,29 +11,29 @@ const items = [
     title: "Next.js Dashboard",
     type: "img",
     src: "https://nextjs-dashboard-app-two.vercel.app/dashboard",
-    img: "assets/img/dashboard.png",
+    img: "/assets/img/dashboard.png",
     project: "Internal Dashboard System",
     client: "Freelance",
     langages: "Next.js",
     previewLink: "https://nextjs-dashboard-app-two.vercel.app/dashboard",
   },
-  {
-    id: 2,
-    title: "Music Playlist",
-    type: "img",
-    src: "",
-    img: "assets/img/projects/project-2.jpg",
-    project: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "https://opera-pop-spotify.netlify.app/",
-  },
+  // {
+  //   id: 2,
+  //   title: "Music Playlist",
+  //   type: "img",
+  //   src: "",
+  //   img: "/assets/img/projects/project-2.jpg",
+  //   project: "Website",
+  //   client: "Envato",
+  //   langages: "HTML, CSS, Javascript",
+  //   previewLink: "https://opera-pop-spotify.netlify.app/",
+  // },
   {
     id: 3,
     title: "Vue Friend Contact",
     type: "img",
     src: "",
-    img: "assets/img/projects/project-3.jpg",
+    img: "/assets/img/projects/project-3.jpg",
     project: "Website",
     client: "Freelance",
     langages: "Vue, HTML, CSS",
@@ -43,7 +44,7 @@ const items = [
     title: "Movies App",
     type: "img",
     src: "",
-    img: "assets/img/projects/project-4.jpg",
+    img: "/assets/img/projects/project-4.jpg",
     project: "Website",
     client: "Freelance",
     langages: "React, React Hooks, Redux, HTML, CSS",
@@ -54,7 +55,7 @@ const items = [
     title: "Github Finder",
     type: "img",
     src: "",
-    img: "assets/img/projects/project-5.jpg",
+    img: "/assets/img/projects/project-5.jpg",
     project: "Website",
     client: "Freelance",
     langages: "React",
@@ -134,10 +135,19 @@ const Portfolio = () => {
                     onClick={() => popupToggle(item)}
                   >
                     <figure className="transition duration-300 rounded-5 relative overflow-hidden">
-                      <img
+                      {/* <img
                         className="block relative w-full rounded-5 transition duration-300"
                         src={item.img}
                         alt=""
+                      /> */}
+
+                      {/* IMAGE tag --test*/}
+                      <Image
+                        className="block relative w-full rounded-5 transition duration-300"
+                        src={item.img}
+                        alt=""
+                        width="300"
+                        height="250"
                       />
                       <div className="absolute w-full h-full flex items-center justify-center bg-accent">
                         <span className="uppercase text-fs-18 text-white">
